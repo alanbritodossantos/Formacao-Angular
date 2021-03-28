@@ -1,3 +1,11 @@
+/**
+Serviço responsável por executar as operações da
+calculadora
+@autor Alan Brito <alanbritodossantos2015@gmail.com>
+@since 1.0.0
+ */
+
+
 import { Injectable } from '@angular/core';
 
 
@@ -14,6 +22,17 @@ export class CalculadoraService {
   static readonly MULTIPLICACAO:string='*';
 
   constructor() { }
+  /**
+   * Método que  calcula uma operação matemática dado
+   * dois números.
+   * Suporta operações soma, subtração, divisção e
+   * multiplicação.
+   *
+   * @param num1 number
+   * @param num2 number
+   * @param operacao Operação string a ser executada
+   * @return number resultado da operação
+   */
 
   calcular(num1:number,num2:number,operacao:string):number{
     let resultado:number;//armazena o resultado da operação
