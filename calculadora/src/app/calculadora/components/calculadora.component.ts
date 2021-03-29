@@ -41,7 +41,7 @@ export class CalculadoraComponent implements OnInit {
    * @return void
    */
 
-  adicionaNumero(numero:string): void {
+  adicionarNumero(numero:string): void {
     if(this.operacao === null) {// se a operação estiver vazia entre
       this.numero1 = this.concatenarNumero(this.numero1, numero);
 
