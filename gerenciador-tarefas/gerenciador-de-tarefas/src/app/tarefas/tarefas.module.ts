@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TarefaService } from './shared';
 import { ListarTarefaComponent } from './listar';
+import { RouterModule } from '@angular/router';
+
+import { TarefaService } from './shared';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -9,7 +12,9 @@ import { ListarTarefaComponent } from './listar';
     ListarTarefaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule, // por ser modulo, ele esta aqui
+    FormsModule // por ser modulo, ele esta aqui
   ],
   providers:[
     TarefaService
